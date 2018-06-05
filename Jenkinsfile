@@ -1,6 +1,6 @@
  node (){
   stage 'Build and Test'
-  env.PATH = "${tool 'M3'}/bin:${env.PATH}"
+  env.PATH = "${tool 'mvn'}/bin:${env.PATH}"
   checkout scm
   sh 'mvn clean package'
  }
